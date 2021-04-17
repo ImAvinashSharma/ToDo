@@ -1,10 +1,15 @@
 import './App.css';
+import Header from './MyComponents/Header'
+import {Todos} from './MyComponents/Todos'
+import {Footer} from './MyComponents/Footer'
 
 function App() {
   return (
-    <div>
-      <h1>Hey bro</h1>
-    </div>
+    <>
+      <Header/>
+      <Todos/>
+      <Footer/>
+    </>
   );
 }
 
