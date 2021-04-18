@@ -8,8 +8,11 @@ export const AddTodo = ({ addTodo }) => {
     e.preventDefault();
     if (!title || !desc) {
       alert("Title or Desc cannot be null");
+    } else {
+      addTodo(title, desc);
+      setTitle("");
+      setDesc("");
     }
-    addTodo(title, desc);
   };
   return (
     <div className="container my-3">
